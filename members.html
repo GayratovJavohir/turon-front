@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - International Turon Federation</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/members.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Added decorative patterns for all corners -->
+    <div class="page-patterns">
+        <div class="pattern-corner pattern-top-left"></div>
+        <div class="pattern-corner pattern-top-right"></div>
+        <div class="pattern-corner pattern-bottom-left"></div>
+        <div class="pattern-corner pattern-bottom-right"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/turon-logo.png" alt="ITF Logo" class="nav-logo">
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="home.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">About</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="history.html" class="dropdown-item">History</a>
+                        <a href="members.html" class="dropdown-item active">Members</a>
+                    </div>
+                </div>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="events.html" class="nav-link">Events & Competitions</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <div class="language-switcher">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                        <option value="uz">UZ</option>
+                    </select>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">ITF Member Countries</h1>
+            <p class="page-subtitle">United in tradition, competing with excellence</p>
+        </div>
+        <div class="national-pattern"></div>
+    </section>
+
+    <!-- Members Stats -->
+    <section class="members-stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">Member Countries</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Continents</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15,000+</div>
+                    <div class="stat-label">Registered Athletes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Certified Coaches</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Countries -->
+    <section class="members-section">
+        <div class="container">
+            <h2 class="section-title">Member Countries</h2>
+
+            <!-- Founding Members -->
+            <div class="members-category">
+                <h3 class="category-title">Founding Members</h3>
+                <div class="members-grid">
+                    <div class="member-card founding">
+                        <div class="member-flag">
+                            <img src="images/flags/uzbekistan.png" alt="Uzbekistan Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Uzbekistan</h4>
+                            <p class="member-status">Founding Member (1995)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 2,500+</span>
+                                <span class="detail-item">Clubs: 45</span>
+                            </div>
+                        </div>
+                        <div class="member-badge">Founding</div>
+                    </div>
+
+                    <div class="member-card founding">
+                        <div class="member-flag">
+                            <img src="images/flags/kazakhstan.png" alt="Kazakhstan Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Kazakhstan</h4>
+                            <p class="member-status">Founding Member (1995)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 1,800+</span>
+                                <span class="detail-item">Clubs: 32</span>
+                            </div>
+                        </div>
+                        <div class="member-badge">Founding</div>
+                    </div>
+
+                    <div class="member-card founding">
+                        <div class="member-flag">
+                            <img src="images/flags/kyrgyzstan.png" alt="Kyrgyzstan Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Kyrgyzstan</h4>
+                            <p class="member-status">Founding Member (1995)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 1,200+</span>
+                                <span class="detail-item">Clubs: 28</span>
+                            </div>
+                        </div>
+                        <div class="member-badge">Founding</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Members -->
+            <div class="members-category">
+                <h3 class="category-title">Full Members</h3>
+                <div class="members-grid">
+                    <div class="member-card">
+                        <div class="member-flag">
+                            <img src="images/flags/tajikistan.png" alt="Tajikistan Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Tajikistan</h4>
+                            <p class="member-status">Full Member (1998)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 1,500+</span>
+                                <span class="detail-item">Clubs: 35</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-flag">
+                            <img src="images/flags/turkmenistan.png" alt="Turkmenistan Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Turkmenistan</h4>
+                            <p class="member-status">Full Member (2001)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 900+</span>
+                                <span class="detail-item">Clubs: 22</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-flag">
+                            <img src="images/flags/azerbaijan.png" alt="Azerbaijan Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Azerbaijan</h4>
+                            <p class="member-status">Full Member (2003)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 1,100+</span>
+                                <span class="detail-item">Clubs: 26</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-flag">
+                            <img src="images/flags/turkey.png" alt="Turkey Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Turkey</h4>
+                            <p class="member-status">Full Member (2005)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 2,200+</span>
+                                <span class="detail-item">Clubs: 48</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-flag">
+                            <img src="images/flags/mongolia.png" alt="Mongolia Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Mongolia</h4>
+                            <p class="member-status">Full Member (2007)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 800+</span>
+                                <span class="detail-item">Clubs: 18</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-flag">
+                            <img src="images/flags/iran.png" alt="Iran Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Iran</h4>
+                            <p class="member-status">Full Member (2010)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 1,600+</span>
+                                <span class="detail-item">Clubs: 38</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Associate Members -->
+            <div class="members-category">
+                <h3 class="category-title">Associate Members</h3>
+                <div class="members-grid">
+                    <div class="member-card associate">
+                        <div class="member-flag">
+                            <img src="images/flags/russia.png" alt="Russia Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Russia</h4>
+                            <p class="member-status">Associate Member (2015)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 600+</span>
+                                <span class="detail-item">Clubs: 15</span>
+                            </div>
+                        </div>
+                        <div class="member-badge associate">Associate</div>
+                    </div>
+
+                    <div class="member-card associate">
+                        <div class="member-flag">
+                            <img src="images/flags/china.png" alt="China Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">China</h4>
+                            <p class="member-status">Associate Member (2018)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 400+</span>
+                                <span class="detail-item">Clubs: 12</span>
+                            </div>
+                        </div>
+                        <div class="member-badge associate">Associate</div>
+                    </div>
+
+                    <div class="member-card associate">
+                        <div class="member-flag">
+                            <img src="images/flags/india.png" alt="India Flag">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">India</h4>
+                            <p class="member-status">Associate Member (2020)</p>
+                            <div class="member-details">
+                                <span class="detail-item">Athletes: 300+</span>
+                                <span class="detail-item">Clubs: 8</span>
+                            </div>
+                        </div>
+                        <div class="member-badge associate">Associate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Benefits -->
+    <section class="membership-benefits-section">
+        <div class="container">
+            <h2 class="section-title">Membership Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h4>Competition Access</h4>
+                    <p>Participate in all ITF sanctioned tournaments and championships worldwide</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <h4>Training Resources</h4>
+                    <p>Access to official training materials, coaching certifications, and educational programs</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h4>International Network</h4>
+                    <p>Connect with athletes, coaches, and officials from around the world</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Development Funding</h4>
+                    <p>Eligible for ITF development grants and financial support programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/turon-logo.png" alt="ITF Logo" class="footer-logo">
+                        <h3>International Turon Federation</h3>
+                    </div>
+                    <p>Preserving and promoting traditional Turon sports worldwide through unity, competition, and
+                        cultural exchange.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Events</h4>
+                    <ul class="footer-links">
+                        <li><a href="events.html">Competitions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 info@turon-federation.org</p>
+                        <p>📞 +998 71 123 45 67</p>
+                        <p>📍 Tashkent, Uzbekistan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 International Turon Federation. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="national-pattern"></div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - International Turon Federation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/turon-logo.png" alt="ITF Logo" class="nav-logo">
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="home.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">About</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="history.html" class="dropdown-item">History</a>
+                        <a href="members.html" class="dropdown-item">Members</a>
+                    </div>
+                </div>
+                <a href="news.html" class="nav-link active">News</a>
+                <a href="events.html" class="nav-link">Events & Competitions</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <div class="language-switcher">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                        <option value="uz">UZ</option>
+                    </select>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Latest News</h1>
+            <p class="page-subtitle">Stay updated with ITF developments</p>
+        </div>
+        <div class="national-pattern"></div>
+    </section>
+
+
+    <!-- News Grid -->
+    <section class="news-list-section">
+        <div class="container">
+            <div class="news-grid">
+                <article class="news-card" data-category="competitions">
+                    <img src="images/news/championship-2024.jpg" alt="Championship 2024" class="news-image">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 15, 2024</span>
+                        </div>
+                        <h3 class="news-title">World Turon Championship 2024 Announced</h3>
+                        <p class="news-excerpt">The annual World Turon Championship will be held in Tashkent, Uzbekistan
+                            this summer, featuring athletes from over 25 countries competing in traditional Turon sports
+                            disciplines.</p>
+                        <a href="news-detail.html?id=1" class="news-link">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="announcements">
+                    <img src="images/news/new-members.jpg" alt="New Members" class="news-image">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 10, 2024</span>
+                        </div>
+                        <h3 class="news-title">Three New Countries Join ITF</h3>
+                        <p class="news-excerpt">We welcome Mongolia, Iran, and Pakistan to our federation, expanding our
+                            global reach and bringing new perspectives to traditional Turon sports.</p>
+                        <a href="news-detail.html?id=2" class="news-link">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="development">
+                    <img src="images/news/youth-program.jpg" alt="Youth Program" class="news-image">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 5, 2024</span>
+                        </div>
+                        <h3 class="news-title">Youth Development Program Launch</h3>
+                        <p class="news-excerpt">New initiative to promote Turon sports among young athletes worldwide,
+                            including training camps, scholarships, and educational resources.</p>
+                        <a href="news-detail.html?id=3" class="news-link">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="competitions">
+                    <img src="images/news/regional-tournament.jpg" alt="Regional Tournament" class="news-image">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">February 28, 2024</span>
+                        </div>
+                        <h3 class="news-title">Central Asian Regional Tournament Results</h3>
+                        <p class="news-excerpt">Outstanding performances at the regional tournament in Almaty,
+                            Kazakhstan, with record-breaking participation from all member countries.</p>
+                        <a href="news-detail.html?id=4" class="news-link">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="development">
+                    <img src="images/news/coaching-program.jpg" alt="Coaching Program" class="news-image">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">February 20, 2024</span>
+                        </div>
+                        <h3 class="news-title">International Coaching Certification Program</h3>
+                        <p class="news-excerpt">New certification program for Turon sports coaches, ensuring
+                            standardized training methods and techniques across all member countries.</p>
+                        <a href="news-detail.html?id=5" class="news-link">Read More</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="announcements">
+                    <img src="images/news/partnership.jpg" alt="Partnership" class="news-image">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">February 15, 2024</span>
+                        </div>
+                        <h3 class="news-title">Partnership with UNESCO for Cultural Preservation</h3>
+                        <p class="news-excerpt">ITF signs historic agreement with UNESCO to preserve and promote
+                            traditional sports as intangible cultural heritage.</p>
+                        <a href="news-detail.html?id=6" class="news-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section main-section">
+                    <div class="footer-brand">
+                        <img src="/placeholder.svg?height=60&width=60" alt="ITF Logo" class="footer-logo">
+                        <div class="brand-info">
+                            <h3>International Turon Federation</h3>
+                            <span class="brand-tagline">Preserving Heritage • Building Unity</span>
+                        </div>
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">The global governing body for
+                        traditional Turon sports, dedicated to preserving ancient athletic traditions while promoting
+                        international cooperation and cultural exchange.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer.quickLinks">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-translate="nav.aboutUs">About Us</a></li>
+                        <li><a href="history.html" data-translate="nav.history">Our History</a></li>
+                        <li><a href="members.html" data-translate="nav.members">Member Countries</a></li>
+                        <li><a href="news.html" data-translate="nav.news">Latest News</a></li>
+                        <li><a href="rules.html">Rules & Regulations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer.competitions">Championships</h4>
+                    <ul class="footer-links">
+                        <li><a href="events.html" data-translate="footer.events">Upcoming Events</a></li>
+                        <li><a href="results.html">Results & Rankings</a></li>
+                        <li><a href="gallery.html" data-translate="nav.gallery">Photo Gallery</a></li>
+                        <li><a href="videos.html">Video Archive</a></li>
+                        <li><a href="calendar.html">Event Calendar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer.contactInfo">Contact Information</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:info@turon-federation.org">info@turon-federation.org</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+998711234567">+998 71 123 45 67</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-details">
+                                <span class="contact-label">Address</span>
+                                <span>Tashkent, Uzbekistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p data-translate="footer.copyright">&copy; 2024 International Turon Federation. All rights
+                        reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="cookies.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

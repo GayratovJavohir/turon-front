@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - International Turon Federation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/turon-logo.png" alt="ITF Logo" class="nav-logo">
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="home.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">About</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="history.html" class="dropdown-item">History</a>
+                        <a href="members.html" class="dropdown-item">Members</a>
+                    </div>
+                </div>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="events.html" class="nav-link">Events & Competitions</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <div class="language-switcher">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                        <option value="uz">UZ</option>
+                    </select>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Gallery</h1>
+            <p class="page-subtitle">Capturing moments of tradition and excellence</p>
+        </div>
+        <div class="national-pattern"></div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            </br>
+            <div class="gallery-masonry" id="galleryGrid">
+                <!-- Photos -->
+                <div class="gallery-item" data-category="photos competitions">
+                    <img src="images/gallery/competition-1.jpg" alt="Competition Action" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Championship Finals</h4>
+                            <p>World Championship 2023</p>
+                        </div>
+                        <button class="gallery-view-btn"
+                            onclick="openLightbox('images/gallery/competition-1.jpg', 'Championship Finals')">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photos ceremonies">
+                    <img src="images/gallery/ceremony-1.jpg" alt="Opening Ceremony" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Opening Ceremony</h4>
+                            <p>Traditional flag parade</p>
+                        </div>
+                        <button class="gallery-view-btn"
+                            onclick="openLightbox('images/gallery/ceremony-1.jpg', 'Opening Ceremony')">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item video-item" data-category="videos competitions">
+                    <img src="images/gallery/video-thumb-1.jpg" alt="Championship Highlights" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Championship Highlights</h4>
+                            <p>Best moments compilation</p>
+                        </div>
+                        <button class="gallery-play-btn" onclick="playVideo('championship-highlights.mp4')">▶</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photos competitions">
+                    <img src="images/gallery/training-1.jpg" alt="Training Session" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Training Session</h4>
+                            <p>Athletes preparing for competition</p>
+                        </div>
+                        <button class="gallery-view-btn"
+                            onclick="openLightbox('images/gallery/training-1.jpg', 'Training Session')">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photos ceremonies">
+                    <img src="images/gallery/awards-1.jpg" alt="Award Ceremony" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Medal Ceremony</h4>
+                            <p>Celebrating champions</p>
+                        </div>
+                        <button class="gallery-view-btn"
+                            onclick="openLightbox('images/gallery/awards-1.jpg', 'Medal Ceremony')">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item video-item" data-category="videos">
+                    <img src="images/gallery/video-thumb-2.jpg" alt="Traditional Techniques" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Traditional Techniques</h4>
+                            <p>Master class demonstration</p>
+                        </div>
+                        <button class="gallery-play-btn" onclick="playVideo('traditional-techniques.mp4')">▶</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photos competitions">
+                    <img src="images/gallery/action-1.jpg" alt="Competition Action" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Intense Competition</h4>
+                            <p>Regional tournament finals</p>
+                        </div>
+                        <button class="gallery-view-btn"
+                            onclick="openLightbox('images/gallery/action-1.jpg', 'Intense Competition')">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photos">
+                    <img src="images/gallery/cultural-1.jpg" alt="Cultural Performance" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Cultural Performance</h4>
+                            <p>Traditional music and dance</p>
+                        </div>
+                        <button class="gallery-view-btn"
+                            onclick="openLightbox('images/gallery/cultural-1.jpg', 'Cultural Performance')">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item video-item" data-category="videos ceremonies">
+                    <img src="images/gallery/video-thumb-3.jpg" alt="Opening Ceremony" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Opening Ceremony</h4>
+                            <p>Full ceremony recording</p>
+                        </div>
+                        <button class="gallery-play-btn" onclick="playVideo('opening-ceremony.mp4')">▶</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="photos">
+                    <img src="images/gallery/team-1.jpg" alt="Team Photo" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>National Teams</h4>
+                            <p>All participating countries</p>
+                        </div>
+                        <button class="gallery-view-btn"
+                            onclick="openLightbox('images/gallery/team-1.jpg', 'National Teams')">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="gallery-load-more">
+                <button class="btn btn-outline" id="loadMoreBtn">Load More</button>
+                </br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <img src="/placeholder.svg" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" onclick="prevImage()">‹</button>
+                <button class="lightbox-next" onclick="nextImage()">›</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <button class="video-modal-close" onclick="closeVideo()">&times;</button>
+            <video controls id="modalVideo">
+                <source src="/placeholder.svg" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    </br>
+
+<footer class="footer">
+    <div class="footer-pattern"></div>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section main-section">
+                <div class="footer-brand">
+                    <img src="/placeholder.svg?height=60&width=60" alt="ITF Logo" class="footer-logo">
+                    <div class="brand-info">
+                        <h3>International Turon Federation</h3>
+                        <span class="brand-tagline">Preserving Heritage • Building Unity</span>
+                    </div>
+                </div>
+                <p class="footer-description" data-translate="footer.description">The global governing body for
+                    traditional Turon sports, dedicated to preserving ancient athletic traditions while promoting
+                    international cooperation and cultural exchange.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-translate="footer.quickLinks">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html" data-translate="nav.aboutUs">About Us</a></li>
+                    <li><a href="history.html" data-translate="nav.history">Our History</a></li>
+                    <li><a href="members.html" data-translate="nav.members">Member Countries</a></li>
+                    <li><a href="news.html" data-translate="nav.news">Latest News</a></li>
+                    <li><a href="rules.html">Rules & Regulations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-translate="footer.competitions">Championships</h4>
+                <ul class="footer-links">
+                    <li><a href="events.html" data-translate="footer.events">Upcoming Events</a></li>
+                    <li><a href="results.html">Results & Rankings</a></li>
+                    <li><a href="gallery.html" data-translate="nav.gallery">Photo Gallery</a></li>
+                    <li><a href="videos.html">Video Archive</a></li>
+                    <li><a href="calendar.html">Event Calendar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-translate="footer.contactInfo">Contact Information</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:info@turon-federation.org">info@turon-federation.org</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+998711234567">+998 71 123 45 67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Address</span>
+                            <span>Tashkent, Uzbekistan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p data-translate="footer.copyright">&copy; 2024 International Turon Federation. All rights
+                    reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

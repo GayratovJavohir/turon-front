@@ -1,0 +1,262 @@
+{
+  "selectLanguage": {
+    "uz": "Tilni tanlang",
+    "ru": "Выберите язык",
+    "en": "Select Language"
+  },
+  "welcome": {
+    "uz": "Turon Federatsiya saytiga xush kelibsiz!",
+    "ru": "Добро пожаловать на сайт Федерации Турон!",
+    "en": "Welcome to the Turon Federation website!"
+  },
+  "latestNews": {
+    "uz": "So'nggi yangiliklar",
+    "ru": "Последние новости",
+    "en": "Latest News"
+  },
+  "news1": {
+    "uz": "Yangilik 1",
+    "ru": "Новость 1",
+    "en": "News 1"
+  },
+  "news2": {
+    "uz": "Yangilik 2",
+    "ru": "Новость 2",
+    "en": "News 2"
+  },
+  "news3": {
+    "uz": "Yangilik 3",
+    "ru": "Новость 3",
+    "en": "News 3"
+  },
+  "news4": {
+    "uz": "Yangilik 4",
+    "ru": "Новость 4",
+    "en": "News 4"
+  },
+  "news5": {
+    "uz": "Yangilik 5",
+    "ru": "Новость 5",
+    "en": "News 5"
+  },
+  "news6": {
+    "uz": "Yangilik 6",
+    "ru": "Новость 6",
+    "en": "News 6"
+  },
+  "shortDesc": {
+    "uz": "Qisqa tavsif...",
+    "ru": "Краткое описание...",
+    "en": "Short description..."
+  },
+  "details": {
+    "uz": "Batafsil",
+    "ru": "Подробнее",
+    "en": "Details"
+  },
+  "aboutUs": {
+    "uz": "Biz haqimizda",
+    "ru": "О нас",
+    "en": "About Us"
+  },
+  "aboutShortInfo": {
+    "uz": "Turon Federatsiyasi haqida qisqacha ma'lumot...",
+    "ru": "Краткая информация о Федерации Турон...",
+    "en": "Short information about Turon Federation..."
+  },
+  "more": {
+    "uz": "Ko'proq",
+    "ru": "Больше",
+    "en": "More"
+  },
+  "gallery": {
+    "uz": "Galereya",
+    "ru": "Галерея",
+    "en": "Gallery"
+  },
+  "partners": {
+    "uz": "Hamkorlar",
+    "ru": "Партнеры",
+    "en": "Partners"
+  },
+  "section1": {
+    "uz": "Bo'lim 1",
+    "ru": "Раздел 1",
+    "en": "Section 1"
+  },
+  "section1Desc": {
+    "uz": "Turon Federatsiyasining maqsadlari va vazifalari haqida...",
+    "ru": "О целях и задачах Федерации Турон...",
+    "en": "About the goals and objectives of Turon Federation..."
+  },
+  "section2": {
+    "uz": "Bo'lim 2",
+    "ru": "Раздел 2",
+    "en": "Section 2"
+  },
+  "section2Desc": {
+    "uz": "Federatsiyaning faoliyati va yutuqlari...",
+    "ru": "О деятельности и достижениях федерации...",
+    "en": "About the federation's activities and achievements..."
+  },
+  "history": {
+    "uz": "Tarix",
+    "ru": "История",
+    "en": "History"
+  },
+  "formation": {
+    "uz": "Tashkil topishi",
+    "ru": "Формирование",
+    "en": "Formation"
+  },
+  "formationDesc": {
+    "uz": "Federatsiyaning tashkil topish tarixi...",
+    "ru": "История формирования федерации...",
+    "en": "History of the federation's formation..."
+  },
+  "download": {
+    "uz": "Download",
+    "ru": "Скачать",
+    "en": "Download"
+  },
+  "mainEvents": {
+    "uz": "Asosiy voqealar",
+    "ru": "Основные события",
+    "en": "Main Events"
+  },
+  "mainEventsDesc": {
+    "uz": "Muhim yutuqlar va voqealar...",
+    "ru": "Важные достижения и события...",
+    "en": "Important achievements and events..."
+  },
+  "news": {
+    "uz": "Yangiliklar",
+    "ru": "Новости",
+    "en": "News"
+  },
+  "eventsCompetitions": {
+    "uz": "Hodisalar va Musobaqalar",
+    "ru": "События и соревнования",
+    "en": "Events and Competitions"
+  },
+  "eventsCalendar": {
+    "uz": "Hodisalar Kalendari",
+    "ru": "Календарь событий",
+    "en": "Events Calendar"
+  },
+  "event1": {
+    "uz": "Hodisa 1",
+    "ru": "Событие 1",
+    "en": "Event 1"
+  },
+  "event2": {
+    "uz": "Hodisa 2",
+    "ru": "Событие 2",
+    "en": "Event 2"
+  },
+  "event3": {
+    "uz": "Hodisa 3",
+    "ru": "Событие 3",
+    "en": "Event 3"
+  },
+  "date1": {
+    "uz": "Sana: 2025-yil 1-oktabr",
+    "ru": "Дата: 1 октября 2025 года",
+    "en": "Date: October 1, 2025"
+  },
+  "date2": {
+    "uz": "Sana: 2025-yil 2-oktabr",
+    "ru": "Дата: 2 октября 2025 года",
+    "en": "Date: October 2, 2025"
+  },
+  "date3": {
+    "uz": "Sana: 2025-yil 3-oktabr",
+    "ru": "Дата: 3 октября 2025 года",
+    "en": "Date: October 3, 2025"
+  },
+  "members": {
+    "uz": "A'zolar",
+    "ru": "Члены",
+    "en": "Members"
+  },
+  "memberStates": {
+    "uz": "A'zo Davlatlar",
+    "ru": "Государства-члены",
+    "en": "Member States"
+  },
+  "contact": {
+    "uz": "Aloqa",
+    "ru": "Контакты",
+    "en": "Contact"
+  },
+  "contactInfo": {
+    "uz": "Aloqa Ma'lumotlari",
+    "ru": "Контактная информация",
+    "en": "Contact Information"
+  },
+  "address": {
+    "uz": "Manzil: Toshkent, O'zbekiston",
+    "ru": "Адрес: Ташкент, Узбекистан",
+    "en": "Address: Tashkent, Uzbekistan"
+  },
+  "phone": {
+    "uz": "Telefon: +998 71 123 45 67",
+    "ru": "Телефон: +998 71 123 45 67",
+    "en": "Phone: +998 71 123 45 67"
+  },
+  "email": {
+    "uz": "Email: info@turonfederation.org",
+    "ru": "Email: info@turonfederation.org",
+    "en": "Email: info@turonfederation.org"
+  },
+  "mapLocation": {
+    "uz": "Xarita joyi",
+    "ru": "Местоположение на карте",
+    "en": "Map Location"
+  },
+  "newsDetail": {
+    "uz": "Yangilik Batafsil",
+    "ru": "Подробности новости",
+    "en": "News Details"
+  },
+  "fullNewsText": {
+    "uz": "Bu yangilikning to'liq matni...",
+    "ru": "Полный текст этой новости...",
+    "en": "Full text of this news..."
+  },
+  "relatedNews": {
+    "uz": "Bog'liq Yangiliklar",
+    "ru": "Связанные новости",
+    "en": "Related News"
+  },
+  "relatedNews1": {
+    "uz": "Bog'liq Yangilik 1",
+    "ru": "Связанная новость 1",
+    "en": "Related News 1"
+  },
+  "relatedNews2": {
+    "uz": "Bog'liq Yangilik 2",
+    "ru": "Связанная новость 2",
+    "en": "Related News 2"
+  },
+  "eventTitle": {
+    "uz": "Hodisa Sarlavhasi",
+    "ru": "Заголовок события",
+    "en": "Event Title"
+  },
+  "fullEventInfo": {
+    "uz": "Hodisa haqida to'liq ma'lumot...",
+    "ru": "Полная информация о событии...",
+    "en": "Full information about the event..."
+  },
+  "copyright": {
+    "uz": "© 2025 Turon Federatsiyasi. Barcha huquqlar himoyalangan.",
+    "ru": "© 2025 Федерация Турон. Все права защищены.",
+    "en": "© 2025 Turon Federation. All rights reserved."
+  },
+  "jsNotLoaded": {
+    "uz": "JavaScript yuklanmadi. Iltimos, brauzeringizda JavaScript yoqilganligini tekshiring.",
+    "ru": "JavaScript не загружен. Пожалуйста, проверьте, включен ли JavaScript в вашем браузере.",
+    "en": "JavaScript not loaded. Please check if JavaScript is enabled in your browser."
+  }
+}

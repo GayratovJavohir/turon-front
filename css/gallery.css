@@ -1,0 +1,236 @@
+/* Gallery Page Specific Styles */
+@import url("common.css");
+
+/* Gallery Hero */
+.gallery-hero {
+    background: var(--primary-600);
+    color: white;
+    padding: var(--spacing-16) 0;
+    text-align: center;
+}
+
+.gallery-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-4);
+}
+
+/* Gallery Filters */
+.gallery-filters {
+    padding: var(--spacing-8) 0;
+    background: white;
+    text-align: center;
+}
+
+.gallery-filter-buttons {
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Gallery Grid */
+.gallery-main {
+    padding: var(--spacing-16) 0;
+    background: var(--bg-primary);
+}
+
+.gallery-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-12);
+}
+
+.gallery-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+}
+
+.gallery-card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-card-content {
+    padding: var(--spacing-4);
+}
+
+.gallery-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-2);
+}
+
+.gallery-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.gallery-type-badge {
+    background: var(--primary-100);
+    color: var(--primary-600);
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--radius-full);
+    font-weight: 500;
+}
+
+/* Lightbox Styles */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: var(--spacing-2);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Video Gallery */
+.video-gallery {
+    margin-top: var(--spacing-16);
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-6);
+}
+
+.video-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-btn {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.video-play-btn:hover {
+    transform: scale(1.1);
+}
+
+.video-info {
+    padding: var(--spacing-4);
+}
+
+.video-info h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-2);
+}
+
+.video-duration {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* Load More Button */
+.load-more-section {
+    text-align: center;
+    margin-top: var(--spacing-12);
+}
+
+.load-more-btn {
+    padding: var(--spacing-3) var(--spacing-8);
+    background: var(--primary-600);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background: var(--primary-700);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-masonry {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-filter-buttons {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: var(--spacing-2);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-masonry {
+        grid-template-columns: 1fr;
+    }
+}

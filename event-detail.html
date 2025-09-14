@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Turon Championship 2024 - International Turon Federation</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/event-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Added decorative patterns for all corners -->
+    <div class="page-patterns">
+        <div class="pattern-corner pattern-top-left"></div>
+        <div class="pattern-corner pattern-top-right"></div>
+        <div class="pattern-corner pattern-bottom-left"></div>
+        <div class="pattern-corner pattern-bottom-right"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/turon-logo.png" alt="ITF Logo" class="nav-logo">
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="home.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">About</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="history.html" class="dropdown-item">History</a>
+                        <a href="members.html" class="dropdown-item">Members</a>
+                    </div>
+                </div>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="events.html" class="nav-link active">Events & Competitions</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <div class="language-switcher">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                        <option value="uz">UZ</option>
+                    </select>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="home.html">Home</a>
+                <span class="breadcrumb-separator">›</span>
+                <a href="events.html">Events</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current">World Championship 2024</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Event Hero -->
+    <section class="event-hero">
+        <div class="event-hero-image">
+            <img src="images/events/world-championship-2024-hero.jpg" alt="World Championship 2024">
+            <div class="event-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="event-hero-content">
+                <div class="event-status-badge">Upcoming Event</div>
+                <h1 class="event-hero-title">World Turon Championship 2024</h1>
+                <p class="event-hero-subtitle">The premier international competition featuring the world's best Turon
+                    athletes</p>
+                <div class="event-hero-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">📅</span>
+                        <span>July 15-22, 2024</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">📍</span>
+                        <span>Tashkent, Uzbekistan</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">🏆</span>
+                        <span>World Championship</span>
+                    </div>
+                </div>
+                <div class="event-hero-actions">
+                    <a href="#schedule" class="btn btn-outline btn-large">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Overview -->
+    <section class="event-overview-section">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Event Overview</h2>
+                    <p>The World Turon Championship 2024 marks the 29th edition of our premier international
+                        competition, bringing together the finest athletes from across the globe to compete in
+                        traditional Turon sports disciplines.</p>
+
+                    <p>This year's championship promises to be the most competitive yet, with record participation from
+                        28 member countries and over 500 athletes competing across 8 traditional disciplines. The event
+                        will showcase the rich cultural heritage of Turon sports while celebrating athletic excellence
+                        at the highest level.</p>
+
+                    <div class="event-highlights">
+                        <h3>Event Highlights</h3>
+                        <ul>
+                            <li>Opening ceremony featuring traditional cultural performances</li>
+                            <li>Competition across 8 traditional Turon disciplines</li>
+                            <li>International coaching workshop and seminars</li>
+                            <li>Cultural exchange programs and exhibitions</li>
+                            <li>Awards ceremony with traditional honors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">28</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Athletes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Disciplines</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$100K</div>
+                        <div class="stat-label">Prize Pool</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Schedule -->
+    <section class="event-schedule-section" id="schedule">
+        <div class="container">
+            <h2 class="section-title">Competition Schedule</h2>
+            <div class="schedule-tabs">
+                <button class="schedule-tab active" data-day="day1">Day 1 - July 15</button>
+                <button class="schedule-tab" data-day="day2">Day 2 - July 16</button>
+                <button class="schedule-tab" data-day="day3">Day 3 - July 17</button>
+                <button class="schedule-tab" data-day="day4">Day 4 - July 18</button>
+            </div>
+
+            <div class="schedule-content">
+                <div class="schedule-day active" id="day1">
+                    <div class="schedule-item">
+                        <div class="schedule-time">09:00</div>
+                        <div class="schedule-event">
+                            <h4>Opening Ceremony</h4>
+                            <p>Traditional welcome ceremony with cultural performances</p>
+                            <span class="schedule-venue">Main Stadium</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">11:00</div>
+                        <div class="schedule-event">
+                            <h4>Men's Traditional Wrestling - Preliminaries</h4>
+                            <p>First round of traditional wrestling competition</p>
+                            <span class="schedule-venue">Wrestling Arena</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">14:00</div>
+                        <div class="schedule-event">
+                            <h4>Women's Archery - Qualification</h4>
+                            <p>Qualification rounds for women's traditional archery</p>
+                            <span class="schedule-venue">Archery Field</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">16:30</div>
+                        <div class="schedule-event">
+                            <h4>Team Horseback Games - Group Stage</h4>
+                            <p>Traditional horseback competition group matches</p>
+                            <span class="schedule-venue">Equestrian Arena</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-day" id="day2">
+                    <div class="schedule-item">
+                        <div class="schedule-time">09:00</div>
+                        <div class="schedule-event">
+                            <h4>Men's Archery - Qualification</h4>
+                            <p>Qualification rounds for men's traditional archery</p>
+                            <span class="schedule-venue">Archery Field</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">11:30</div>
+                        <div class="schedule-event">
+                            <h4>Traditional Strength Games</h4>
+                            <p>Stone lifting and traditional strength competitions</p>
+                            <span class="schedule-venue">Strength Arena</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participating Countries -->
+    <section class="participating-countries-section">
+        <div class="container">
+            <h2 class="section-title">Participating Countries</h2>
+            <div class="countries-grid">
+                <div class="country-card">
+                    <img src="images/flags/uzbekistan.png" alt="Uzbekistan" class="country-flag">
+                    <div class="country-info">
+                        <h4>Uzbekistan</h4>
+                        <span class="athlete-count">45 Athletes</span>
+                    </div>
+                </div>
+                <div class="country-card">
+                    <img src="images/flags/kazakhstan.png" alt="Kazakhstan" class="country-flag">
+                    <div class="country-info">
+                        <h4>Kazakhstan</h4>
+                        <span class="athlete-count">38 Athletes</span>
+                    </div>
+                </div>
+                <div class="country-card">
+                    <img src="images/flags/kyrgyzstan.png" alt="Kyrgyzstan" class="country-flag">
+                    <div class="country-info">
+                        <h4>Kyrgyzstan</h4>
+                        <span class="athlete-count">32 Athletes</span>
+                    </div>
+                </div>
+                <div class="country-card">
+                    <img src="images/flags/tajikistan.png" alt="Tajikistan" class="country-flag">
+                    <div class="country-info">
+                        <h4>Tajikistan</h4>
+                        <span class="athlete-count">28 Athletes</span>
+                    </div>
+                </div>
+                <div class="country-card">
+                    <img src="images/flags/turkey.png" alt="Turkey" class="country-flag">
+                    <div class="country-info">
+                        <h4>Turkey</h4>
+                        <span class="athlete-count">35 Athletes</span>
+                    </div>
+                </div>
+                <div class="country-card">
+                    <img src="images/flags/mongolia.png" alt="Mongolia" class="country-flag">
+                    <div class="country-info">
+                        <h4>Mongolia</h4>
+                        <span class="athlete-count">25 Athletes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/turon-logo.png" alt="ITF Logo" class="footer-logo">
+                        <h3>International Turon Federation</h3>
+                    </div>
+                    <p>Preserving and promoting traditional Turon sports worldwide through unity, competition, and
+                        cultural exchange.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Events</h4>
+                    <ul class="footer-links">
+                        <li><a href="events.html">Competitions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 info@turon-federation.org</p>
+                        <p>📞 +998 71 123 45 67</p>
+                        <p>📍 Tashkent, Uzbekistan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 International Turon Federation. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="national-pattern"></div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

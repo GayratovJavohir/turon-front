@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Competitions - International Turon Federation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/turon-logo.png" alt="ITF Logo" class="nav-logo">
+                <span class="nav-title">International Turon Federation</span>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="home.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">About</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                        <a href="history.html" class="dropdown-item">History</a>
+                        <a href="members.html" class="dropdown-item">Members</a>
+                    </div>
+                </div>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="events.html" class="nav-link active">Events & Competitions</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <div class="language-switcher">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                        <option value="uz">UZ</option>
+                    </select>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Events & Competitions</h1>
+            <p class="page-subtitle">Upcoming tournaments and championships</p>
+        </div>
+        <div class="national-pattern"></div>
+    </section>
+    <!-- Upcoming Events -->
+    <section class="events-section">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card featured" data-type="championship">
+                    <div class="event-image">
+                        <img src="images/events/world-championship-2024.jpg" alt="World Championship 2024">
+                        <div class="event-badge">Featured</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">July 15-22, 2024</span>
+                            <span class="event-location">Tashkent, Uzbekistan</span>
+                        </div>
+                        <h3 class="event-title">World Turon Championship 2024</h3>
+                        <p class="event-description">The premier international competition featuring the world's best
+                            Turon athletes competing across all traditional disciplines.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Participants:</span>
+                                <span class="detail-value">25+ Countries</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Disciplines:</span>
+                                <span class="detail-value">8 Categories</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Prize Pool:</span>
+                                <span class="detail-value">$100,000</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="event-detail.html?id=1" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card" data-type="tournament">
+                    <div class="event-image">
+                        <img src="images/events/asian-cup.jpg" alt="Asian Cup">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">May 10-15, 2024</span>
+                            <span class="event-location">Almaty, Kazakhstan</span>
+                        </div>
+                        <h3 class="event-title">Asian Turon Cup 2024</h3>
+                        <p class="event-description">Regional championship for Asian countries with qualifying rounds
+                            for the World Championship.</p>
+                        <div class="event-actions">
+                            <a href="event-detail.html?id=2" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card" data-type="workshop">
+                    <div class="event-image">
+                        <img src="images/events/coaching-workshop.jpg" alt="Coaching Workshop">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">April 20-22, 2024</span>
+                            <span class="event-location">Istanbul, Turkey</span>
+                        </div>
+                        <h3 class="event-title">International Coaching Workshop</h3>
+                        <p class="event-description">Advanced training techniques and certification program for Turon
+                            sports coaches.</p>
+                        <div class="event-actions">
+                            <a href="event-detail.html?id=3" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card" data-type="tournament">
+                    <div class="event-image">
+                        <img src="images/events/youth-championship.jpg" alt="Youth Championship">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">June 5-10, 2024</span>
+                            <span class="event-location">Bishkek, Kyrgyzstan</span>
+                        </div>
+                        <h3 class="event-title">World Youth Championship</h3>
+                        <p class="event-description">International competition for young athletes under 18 years old
+                            across all Turon disciplines.</p>
+                        <div class="event-actions">
+                            <a href="event-detail.html?id=4" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events -->
+    <section class="past-events-section">
+        <div class="container">
+            <h2 class="section-title">Past Events</h2>
+            <div class="past-events-grid">
+                <div class="past-event-card">
+                    <img src="images/events/past/championship-2023.jpg" alt="Championship 2023"
+                        class="past-event-image">
+                    <div class="past-event-content">
+                        <h4 class="past-event-title">World Championship 2023</h4>
+                        <p class="past-event-date">August 2023 - Dushanbe, Tajikistan</p>
+                        <a href="event-detail.html?id=past-1" class="past-event-link">View Results</a>
+                    </div>
+                </div>
+
+                <div class="past-event-card">
+                    <img src="images/events/past/regional-2023.jpg" alt="Regional 2023" class="past-event-image">
+                    <div class="past-event-content">
+                        <h4 class="past-event-title">Central Asian Regional 2023</h4>
+                        <p class="past-event-date">May 2023 - Ashgabat, Turkmenistan</p>
+                        <a href="event-detail.html?id=past-2" class="past-event-link">View Results</a>
+                    </div>
+                </div>
+
+                <div class="past-event-card">
+                    <img src="images/events/past/youth-2023.jpg" alt="Youth 2023" class="past-event-image">
+                    <div class="past-event-content">
+                        <h4 class="past-event-title">Youth Championship 2023</h4>
+                        <p class="past-event-date">June 2023 - Baku, Azerbaijan</p>
+                        <a href="event-detail.html?id=past-3" class="past-event-link">View Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer">
+    <div class="footer-pattern"></div>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section main-section">
+                <div class="footer-brand">
+                    <img src="/placeholder.svg?height=60&width=60" alt="ITF Logo" class="footer-logo">
+                    <div class="brand-info">
+                        <h3>International Turon Federation</h3>
+                        <span class="brand-tagline">Preserving Heritage • Building Unity</span>
+                    </div>
+                </div>
+                <p class="footer-description" data-translate="footer.description">The global governing body for
+                    traditional Turon sports, dedicated to preserving ancient athletic traditions while promoting
+                    international cooperation and cultural exchange.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-translate="footer.quickLinks">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html" data-translate="nav.aboutUs">About Us</a></li>
+                    <li><a href="history.html" data-translate="nav.history">Our History</a></li>
+                    <li><a href="members.html" data-translate="nav.members">Member Countries</a></li>
+                    <li><a href="news.html" data-translate="nav.news">Latest News</a></li>
+                    <li><a href="rules.html">Rules & Regulations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-translate="footer.competitions">Championships</h4>
+                <ul class="footer-links">
+                    <li><a href="events.html" data-translate="footer.events">Upcoming Events</a></li>
+                    <li><a href="results.html">Results & Rankings</a></li>
+                    <li><a href="gallery.html" data-translate="nav.gallery">Photo Gallery</a></li>
+                    <li><a href="videos.html">Video Archive</a></li>
+                    <li><a href="calendar.html">Event Calendar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-translate="footer.contactInfo">Contact Information</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:info@turon-federation.org">info@turon-federation.org</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+998711234567">+998 71 123 45 67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Address</span>
+                            <span>Tashkent, Uzbekistan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p data-translate="footer.copyright">&copy; 2024 International Turon Federation. All rights
+                    reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
