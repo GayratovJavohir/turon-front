@@ -1,194 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - International Turon Federation</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Aloqa - Xalqaro Turon Federatsiyasi</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="images/turon-logo.png" alt="ITF Logo" class="nav-logo">
+    <div id="navbar-container"></div>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Biz bilan bog'laning</h1>
+                <p>Savollaringiz bo'lsa, biz bilan bog'laning</p>
             </div>
+        </section>
 
-            <div class="nav-menu" id="navMenu">
-                <a href="home.html" class="nav-link">Home</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu">
-                        <a href="about.html" class="dropdown-item">About Us</a>
-                        <a href="history.html" class="dropdown-item">History</a>
-                        <a href="members.html" class="dropdown-item">Members</a>
-                    </div>
-                </div>
-                <a href="news.html" class="nav-link">News</a>
-                <a href="events.html" class="nav-link">Events & Competitions</a>
-                <a href="gallery.html" class="nav-link">Gallery</a>
-                <a href="contact.html" class="nav-link active">Contact</a>
-            </div>
-
-            <div class="nav-controls">
-                <div class="language-switcher">
-                    <select id="languageSelect" class="language-select">
-                        <option value="en">EN</option>
-                        <option value="ru">RU</option>
-                        <option value="uz">UZ</option>
-                    </select>
-                </div>
-                <button class="theme-toggle" id="themeToggle">
-                    <span class="theme-icon">🌙</span>
-                </button>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">Contact Us</h1>
-            <p class="page-subtitle">Get in touch with the International Turon Federation</p>
-        </div>
-        <div class="national-pattern"></div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-
-            <!-- Contact Information -->
-            <div class="contact-info-section">
-                <h2>Contact Information</h2>
-
-                <div class="contact-card">
-                    <div class="contact-icon">🏢</div>
-                    <div class="contact-details">
-                        <h3>Headquarters</h3>
-                        <p>International Turon Federation<br>
-                            Amir Timur Avenue 15<br>
-                            Tashkent 100000, Uzbekistan</p>
-                    </div>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">📞</div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <p>Main Office: +998 71 123 45 67<br>
-                            Events Department: +998 71 123 45 68<br>
-                            Media Relations: +998 71 123 45 69</p>
-                    </div>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>General: info@turon-federation.org<br>
-                            Events: events@turon-federation.org<br>
-                            Media: media@turon-federation.org<br>
-                            Membership: membership@turon-federation.org</p>
-                    </div>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">🕒</div>
-                    <div class="contact-details">
-                        <h3>Office Hours</h3>
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
-                            Saturday: 9:00 AM - 1:00 PM<br>
-                            Sunday: Closed<br>
-                            <small>(UTC+5 Tashkent Time)</small>
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <h2 class="section-title">Find Us</h2>
-            <div class="map-container">
-                <div class="map-placeholder">
-                    <div class="map-content">
-                        <h3>ITF Headquarters Location</h3>
-                        <p>Amir Timur Avenue 15, Tashkent, Uzbekistan</p>
-                        <p>Interactive map would be embedded here using Google Maps or similar service</p>
-                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline">Open in Google
-                            Maps</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <img src="images/turon-logo.png" alt="ITF Logo" class="footer-logo">
-                        <h3>International Turon Federation</h3>
-                    </div>
-                    <p>Preserving and promoting traditional Turon sports worldwide through unity, competition, and
-                        cultural exchange.</p>
-                </div>
-    
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="members.html">Members</a></li>
-                        <li><a href="news.html">News</a></li>
-                    </ul>
-                </div>
-    
-                <div class="footer-section">
-                    <h4>Events</h4>
-                    <ul class="footer-links">
-                        <li><a href="events.html">Competitions</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-    
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
                     <div class="contact-info">
-                        <p>📧 info@turon-federation.org</p>
-                        <p>📞 +998 71 123 45 67</p>
-                        <p>📍 Tashkent, Uzbekistan</p>
+                        <h2>Aloqa ma'lumotlari</h2>
+
+                        <div class="contact-item">
+                            <h3>Manzil</h3>
+                            <p>Toshkent sh., Amir Temur ko'chasi, 15-uy</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Telefon</h3>
+                            <p>+998 71 123 45 67</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p>info@turonfederation.org</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Ish vaqti</h3>
+                            <p>Dushanba - Juma: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Xabar yuborish</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Ism</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Mavzu</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Xabar</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Yuborish</button>
+                        </form>
                     </div>
                 </div>
             </div>
-    
-            <div class="footer-bottom">
-                <p>&copy; 2024 International Turon Federation. All rights reserved.</p>
-            </div>
-        </div>
-        <div class="national-pattern"></div>
-    </footer>
+        </section>
+    </main>
 
+    <div id="footer-container"></div>
 
-    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>

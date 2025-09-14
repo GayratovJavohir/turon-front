@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turon Federation - Language Selection</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <style>
+        .entering-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--background-color);
+            /* Added padding for mobile */
+            padding: 1rem;
+        }
+
+        .entering-container {
+            text-align: center;
+            /* Responsive padding */
+            padding: 2rem 1rem;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .logo-container {
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            /* Responsive logo size */
+            width: clamp(80px, 15vw, 120px);
+            height: clamp(80px, 15vw, 120px);
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .language-title {
+            /* Responsive font size */
+            font-size: clamp(1.25rem, 4vw, 1.5rem);
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+        }
+
+        .language-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* Better mobile spacing */
+            margin: 0 -0.5rem;
+        }
+
+        .language-button {
+            /* Better responsive button sizing */
+            padding: clamp(0.75rem, 3vw, 1rem) clamp(1.5rem, 5vw, 2rem);
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            min-width: clamp(80px, 20vw, 100px);
+            font-size: clamp(0.875rem, 3vw, 1rem);
+            margin: 0.5rem;
+        }
+
+        .language-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Added mobile-specific styles */
+        @media (max-width: 480px) {
+            .language-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .language-button {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="entering-page">
+        <div class="entering-container">
+            <div class="logo-container">
+                <img src="/placeholder.svg?height=120&width=120" alt="Turon Federation" class="logo">
+            </div>
+            <h1 class="language-title">Tilni tanlang</h1>
+            <div class="language-buttons">
+                <a href="index.html?lang=uz" class="language-button">UZ</a>
+                <a href="index.html?lang=ru" class="language-button">RU</a>
+                <a href="index.html?lang=en" class="language-button">ENG</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<nav class="navbar">
+  <div class="container navbar-container">
+    <a href="index.html" class="navbar-logo">
+      <img src="/placeholder.svg?height=40&width=40" alt="Turon Federation">
+      Turon Federation
+    </a>
+    
+    <ul class="navbar-menu">
+      <li class="navbar-item">
+        <a href="index.html" class="navbar-link">Home</a>
+      </li>
+      <li class="navbar-item dropdown">
+        <a href="about.html" class="navbar-link">About</a>
+        <div class="dropdown-content">
+          <a href="history.html">History</a>
+          <a href="members.html">Members</a>
+        </div>
+      </li>
+      <li class="navbar-item">
+        <a href="news.html" class="navbar-link">News</a>
+      </li>
+      <li class="navbar-item">
+        <a href="events.html" class="navbar-link">Events & Competitions</a>
+      </li>
+      <li class="navbar-item">
+        <a href="gallery.html" class="navbar-link">Gallery</a>
+      </li>
+      <li class="navbar-item">
+        <a href="contact.html" class="navbar-link">Contact</a>
+      </li>
+    </ul>
+    
+    <div class="navbar-controls">
+      <div class="language-selector">
+        <button class="language-btn" onclick="toggleLanguage()">
+          <span id="current-lang">EN</span> ▼
+        </button>
+        <div class="dropdown-content" id="language-dropdown">
+          <a href="#" onclick="setLanguage('uz')">UZ</a>
+          <a href="#" onclick="setLanguage('ru')">RU</a>
+          <a href="#" onclick="setLanguage('en')">EN</a>
+        </div>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">☀️</span>
+      </button>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </div>
+  
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+      <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
+      <li class="navbar-item"><a href="history.html" class="navbar-link">History</a></li>
+      <li class="navbar-item"><a href="members.html" class="navbar-link">Members</a></li>
+      <li class="navbar-item"><a href="news.html" class="navbar-link">News</a></li>
+      <li class="navbar-item"><a href="events.html" class="navbar-link">Events</a></li>
+      <li class="navbar-item"><a href="gallery.html" class="navbar-link">Gallery</a></li>
+      <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>

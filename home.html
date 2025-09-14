@@ -4,368 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International Turon Federation - Home</title>
-    <link rel="stylesheet" href="css/main-styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <title>Turon Federation - Home</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
+    <div id="navbar-container"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="/placeholder.svg?height=50&width=50" alt="ITF Logo" class="nav-logo">
-                <div class="brand-text">
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    🏆 World Championship 2024
                 </div>
-            </div>
+                <h1 class="hero-title">Добро пожаловать в Международную Федерацию Турон</h1>
+                <p class="hero-subtitle">Сохранение и продвижение традиционных видов спорта Турон по всему миру</p>
 
-            <div class="nav-menu" id="navMenu">
-                <a href="home.html" class="nav-link active" data-translate="nav.home">
-                    <span class="nav-icon">🏠</span>
-                    <span>Home</span>
-                </a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.about">
-                        <span class="nav-icon">ℹ️</span>
-                        <span>About</span>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="about.html" class="dropdown-item" data-translate="nav.aboutUs">About Us</a>
-                        <a href="history.html" class="dropdown-item" data-translate="nav.history">History</a>
-                        <a href="members.html" class="dropdown-item" data-translate="nav.members">Members</a>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">15+</span>
+                        <span class="hero-stat-label">Member Countries</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">500+</span>
+                        <span class="hero-stat-label">Athletes</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">25+</span>
+                        <span class="hero-stat-label">Annual Events</span>
                     </div>
                 </div>
-                <a href="news.html" class="nav-link" data-translate="nav.news">
-                    <span class="nav-icon">📰</span>
-                    <span>News</span>
-                </a>
-                <a href="events.html" class="nav-link" data-translate="nav.events">
-                    <span class="nav-icon">🏆</span>
-                    <span>Events</span>
-                </a>
-                <a href="gallery.html" class="nav-link" data-translate="nav.gallery">
-                    <span class="nav-icon">📸</span>
-                    <span>Gallery</span>
-                </a>
-                <a href="contact.html" class="nav-link" data-translate="nav.contact">
-                    <span class="nav-icon">📞</span>
-                    <span>Contact</span>
-                </a>
-            </div>
 
-            <div class="nav-controls">
-                <div class="language-switcher">
-                    <select id="languageSelect" class="language-select">
-                        <option value="en">🇬🇧 EN</option>
-                        <option value="ru">🇷🇺 RU</option>
-                        <option value="uz">🇺🇿 UZ</option>
-                    </select>
-                </div>
-                <button class="theme-toggle" id="themeToggle">
-                    <span class="theme-icon">🌙</span>
-                </button>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <img src="/images/2025-09-13 17.17.57.jpg" alt="">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>🏆 World Championship 2024</span>
-            </div>
-            <h1 class="hero-title" data-translate="hero.title">Welcome to International Turon Federation</h1>
-            <p class="hero-subtitle" data-translate="hero.subtitle">Preserving ancient traditions, building modern
-                champions, uniting nations through the spirit of Turon sports</p>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Member Countries</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Athletes</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">25+</span>
-                    <span class="stat-label">Annual Events</span>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Узнать больше</a>
+                    <a href="events.html" class="btn btn-secondary">Посмотреть события</a>
                 </div>
             </div>
-            <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary" data-translate="hero.learnMore">
-                    <span>Discover Our Story</span>
-                    <span class="btn-arrow">→</span>
-                </a>
-                <a href="events.html" class="btn btn-secondary" data-translate="hero.viewEvents">
-                    <span>View Championships</span>
-                    <span class="btn-icon">🏆</span>
-                </a>
-            </div>
-        </div>
-        <div class="heroo-background">
-            <img src="/images/2025-09-13 17.17.57.jpg" alt="">
-            <div class="heroo-overlay"></div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Latest News Section -->
-    <section class="news-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-translate="sections.latestNews">Latest News & Updates</h2>
-                <p class="section-subtitle">Stay informed about the latest developments in the world of Turon sports</p>
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="container">
+                <h2 class="welcome-title">Welcome to Turon Federation</h2>
+                <p>Preserving and promoting traditional Turon sports worldwide through cultural heritage and athletic
+                    excellence.</p>
             </div>
+        </section>
 
-            <div class="news-grid">
-                <article class="news-card featured">
-                    <div class="news-image-container">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Championship 2024" class="news-image">
-                        <div class="news-category">Championship</div>
+        <!-- News Section -->
+        <section class="news-section">
+            <div class="container">
+                <h2 class="section-title">Latest News</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Championship">
+                        <div class="news-card-content">
+                            <h3 class="news-card-title">World Championship 2024 Results</h3>
+                            <p class="news-card-excerpt">Amazing performances from athletes across 15 countries...</p>
+                            <time class="news-card-date">March 15, 2024</time>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Training">
+                        <div class="news-card-content">
+                            <h3 class="news-card-title">New Training Programs Launched</h3>
+                            <p class="news-card-excerpt">Comprehensive training programs for young athletes...</p>
+                            <time class="news-card-date">March 10, 2024</time>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Cultural Event">
+                        <div class="news-card-content">
+                            <h3 class="news-card-title">Cultural Heritage Festival</h3>
+                            <p class="news-card-excerpt">Celebrating traditional sports and cultural heritage...</p>
+                            <time class="news-card-date">March 5, 2024</time>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Turon Federation</h2>
+                        <p>The International Turon Federation is dedicated to preserving and promoting traditional
+                            Central Asian sports. Our mission is to maintain cultural heritage while fostering
+                            international cooperation and athletic excellence.</p>
+                        <a href="about.html" class="btn btn-primary">Learn More</a>
                     </div>
-                    <div class="news-content">
-                        <span class="news-date">
-                            <span class="date-icon">📅</span>
-                            March 15, 2024
-                        </span>
-                        <h3 class="news-title">World Turon Championship 2024 Announced</h3>
-                        <p class="news-excerpt">The most prestigious tournament in traditional Turon sports will be held
-                            in Tashkent, Uzbekistan this summer, featuring athletes from 15 nations competing for
-                            glory...</p>
-                        <div class="news-meta">
-                            <span class="read-time">⏱️ 3 min read</span>
-                            <a href="news-detail.html?id=1" class="news-link">
-                                Read Full Story
-                                <span class="link-arrow">→</span>
-                            </a>
+                    <div class="about-image">
+                        <img src="/placeholder.svg?height=400&width=500" alt="Traditional Sports">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Preview -->
+        <section class="gallery-preview">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="gallery-tabs">
+                    <a href="gallery.html?tab=events" class="gallery-tab active">Events</a>
+                    <a href="gallery.html?tab=training" class="gallery-tab">Training</a>
+                    <a href="gallery.html?tab=cultural" class="gallery-tab">Cultural</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners-section">
+            <div class="container">
+                <h2 class="section-title">Our Partners</h2>
+                <div class="partners-slider">
+                    <div class="partners-track">
+                        <div class="partner-item">
+                            <img src="/placeholder.svg?height=60&width=80" alt="Uzbekistan">
+                        </div>
+                        <div class="partner-item">
+                            <img src="/placeholder.svg?height=60&width=80" alt="Kazakhstan">
+                        </div>
+                        <div class="partner-item">
+                            <img src="/placeholder.svg?height=60&width=80" alt="Kyrgyzstan">
+                        </div>
+                        <div class="partner-item">
+                            <img src="/placeholder.svg?height=60&width=80" alt="Tajikistan">
+                        </div>
+                        <div class="partner-item">
+                            <img src="/placeholder.svg?height=60&width=80" alt="Turkmenistan">
+                        </div>
+                        <div class="partner-item">
+                            <img src="/placeholder.svg?height=60&width=80" alt="Afghanistan">
                         </div>
                     </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="news-image-container">
-                        <img src="/placeholder.svg?height=250&width=350" alt="New Members" class="news-image">
-                        <div class="news-category">Expansion</div>
-                    </div>
-                    <div class="news-content">
-                        <span class="news-date">
-                            <span class="date-icon">📅</span>
-                            March 10, 2024
-                        </span>
-                        <h3 class="news-title">Three New Countries Join ITF</h3>
-                        <p class="news-excerpt">We proudly welcome Mongolia, Iran, and Pakistan to our growing
-                            federation family...</p>
-                        <div class="news-meta">
-                            <span class="read-time">⏱️ 2 min read</span>
-                            <a href="news-detail.html?id=2" class="news-link">
-                                Read More
-                                <span class="link-arrow">→</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="news-image-container">
-                        <img src="/placeholder.svg?height=250&width=350" alt="Youth Program" class="news-image">
-                        <div class="news-category">Development</div>
-                    </div>
-                    <div class="news-content">
-                        <span class="news-date">
-                            <span class="date-icon">📅</span>
-                            March 5, 2024
-                        </span>
-                        <h3 class="news-title">Youth Development Program Launch</h3>
-                        <p class="news-excerpt">Introducing comprehensive training programs for young athletes aged
-                            12-18...</p>
-                        <div class="news-meta">
-                            <span class="read-time">⏱️ 4 min read</span>
-                            <a href="news-detail.html?id=3" class="news-link">
-                                Learn More
-                                <span class="link-arrow">→</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="section-footer">
-                <a href="news.html" class="btn btn-outline" data-translate="sections.viewAllNews">
-                    <span>View All News</span>
-                    <span class="btn-count">(24)</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Preview Section -->
-    <section class="about-preview">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title" data-translate="sections.aboutFederation">About International Turon
-                        Federation</h2>
-                    <p>The International Turon Federation (ITF) is the global governing body for traditional Turon
-                        sports, dedicated to preserving and promoting these ancient athletic traditions worldwide.</p>
-                    <p>Founded with the mission to unite nations through sport, we organize international competitions,
-                        develop standardized rules, and support the growth of Turon sports in member countries.</p>
-                    <a href="about.html" class="btn btn-primary" data-translate="sections.learnMoreAbout">Learn More
-                        About Us</a>
-                </div>
-                <div class="about-image">
-                    <img src="/placeholder.svg?height=400&width=600" alt="ITF Headquarters" class="feature-image">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Gallery Preview Section -->
-    <section class="gallery-preview">
-        <div class="container">
-            <h2 class="section-title" data-translate="sections.galleryVideos">Gallery & Videos</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Competition" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <span class="gallery-type">Photo</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Training" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <span class="gallery-type">Photo</span>
-                    </div>
-                </div>
-                <div class="gallery-item video-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Championship Highlights"
-                        class="gallery-image">
-                    <div class="gallery-overlay">
-                        <span class="gallery-type">Video</span>
-                        <button class="play-button">▶</button>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Ceremony" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <span class="gallery-type">Photo</span>
-                    </div>
-                </div>
-            </div>
-            <div class="section-footer">
-                <a href="gallery.html" class="btn btn-outline" data-translate="sections.viewFullGallery">View Full
-                    Gallery</a>
-            </div>
-        </div>
-    </section>
+    <div id="footer-container"></div>
 
-    <!-- Partners Section -->
-    <section class="partners-section">
-        <div class="container">
-            <h2 class="section-title" data-translate="sections.partnersMembers">Our Partners & Members</h2>
-            <div class="partners-slideshow" id="partnersSlideshow">
-                <div class="partners-track">
-                    <div class="partner-item">
-                        <img src="/placeholder.svg?height=60&width=90" alt="Uzbekistan" class="partner-flag">
-                        <span class="partner-name">Uzbekistan</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="/placeholder.svg?height=60&width=90" alt="Kazakhstan" class="partner-flag">
-                        <span class="partner-name">Kazakhstan</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="/placeholder.svg?height=60&width=90" alt="Kyrgyzstan" class="partner-flag">
-                        <span class="partner-name">Kyrgyzstan</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="/placeholder.svg?height=60&width=90" alt="Tajikistan" class="partner-flag">
-                        <span class="partner-name">Tajikistan</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="/placeholder.svg?height=60&width=90" alt="Turkmenistan" class="partner-flag">
-                        <span class="partner-name">Turkmenistan</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="/placeholder.svg?height=60&width=90" alt="Afghanistan" class="partner-flag">
-                        <span class="partner-name">Afghanistan</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="/placeholder.svg?height=60&width=90" alt="Turkey" class="partner-flag">
-                        <span class="partner-name">Turkey</span>
-                    </div>
-                    <div class="partner-item">
-                        <img src="/placeholder.svg?height=60&width=90" alt="Azerbaijan" class="partner-flag">
-                        <span class="partner-name">Azerbaijan</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <img src="images/turon-logo.png" alt="ITF Logo" class="footer-logo">
-                        <h3>International Turon Federation</h3>
-                    </div>
-                    <p>Preserving and promoting traditional Turon sports worldwide through unity, competition, and
-                        cultural exchange.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="members.html">Members</a></li>
-                        <li><a href="news.html">News</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Events</h4>
-                    <ul class="footer-links">
-                        <li><a href="events.html">Competitions</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <div class="contact-info">
-                        <p>📧 info@turon-federation.org</p>
-                        <p>📞 +998 71 123 45 67</p>
-                        <p>📍 Tashkent, Uzbekistan</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 International Turon Federation. All rights reserved.</p>
-            </div>
-        </div>
-        <div class="national-pattern"></div>
-    </footer>
-
-
-    <script src="js/translations.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>

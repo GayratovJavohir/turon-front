@@ -1,0 +1,170 @@
+.event-hero {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: white;
+    padding: 120px 0 80px;
+}
+
+.event-hero-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.event-date-large {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    min-width: 120px;
+}
+
+.event-date-large .day {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date-large .month {
+    display: block;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.event-date-large .year {
+    display: block;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.event-info h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.event-location,
+.event-time {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.event-details {
+    padding: 80px 0;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.main-content-area h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.main-content-area h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 2rem 0 1rem;
+}
+
+.main-content-area p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.schedule {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-item .time {
+    font-weight: 600;
+    color: var(--primary-color);
+    min-width: 60px;
+}
+
+.schedule-item .activity {
+    color: var(--text-color);
+}
+
+.info-card,
+.register-card {
+    background: var(--bg-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.info-card h3,
+.register-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.info-item strong {
+    color: var(--text-color);
+}
+
+.register-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.register-btn {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+    .event-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-info h1 {
+        font-size: 2rem;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

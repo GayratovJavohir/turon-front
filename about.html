@@ -1,215 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - International Turon Federation</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Biz haqimizda - Xalqaro Turon Federatsiyasi</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/about.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="images/turon-logo.png" alt="ITF Logo" class="nav-logo">
-            </div>
+    <div id="navbar-container"></div>
 
-            <div class="nav-menu" id="navMenu">
-                <a href="home.html" class="nav-link">Home</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active">About</a>
-                    <div class="dropdown-menu">
-                        <a href="about.html" class="dropdown-item">About Us</a>
-                        <a href="history.html" class="dropdown-item">History</a>
-                        <a href="members.html" class="dropdown-item">Members</a>
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Biz haqimizda</h1>
+                <p>Xalqaro Turon Federatsiyasi - an'anaviy sport turlarini rivojlantirish va saqlash uchun tashkil
+                    etilgan</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Bizning missiyamiz</h2>
+                        <p>Xalqaro Turon Federatsiyasi 2010-yilda tashkil etilgan bo'lib, an'anaviy turon sport
+                            turlarini dunyo miqyosida rivojlantirish va targ'ib qilishni maqsad qilgan.</p>
+
+                        <h3>Asosiy yo'nalishlar:</h3>
+                        <ul>
+                            <li>An'anaviy sport turlarini saqlash va rivojlantirish</li>
+                            <li>Xalqaro musobaqalar tashkil etish</li>
+                            <li>Yoshlar o'rtasida turon sportini targ'ib qilish</li>
+                            <li>Madaniy merosni saqlash</li>
+                        </ul>
                     </div>
-                </div>
-                <a href="news.html" class="nav-link">News</a>
-                <a href="events.html" class="nav-link">Events & Competitions</a>
-                <a href="gallery.html" class="nav-link">Gallery</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-
-            <div class="nav-controls">
-                <div class="language-switcher">
-                    <select id="languageSelect" class="language-select">
-                        <option value="en">EN</option>
-                        <option value="ru">RU</option>
-                        <option value="uz">UZ</option>
-                    </select>
-                </div>
-                <button class="theme-toggle" id="themeToggle">
-                    <span class="theme-icon">🌙</span>
-                </button>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">About International Turon Federation</h1>
-            <p class="page-subtitle">Preserving tradition, building the future</p>
-        </div>
-        <div class="national-pattern"></div>
-    </section>
-
-    <!-- About Content -->
-    <section class="about-content-section">
-        <div class="container">
-            <!-- Mission Section -->
-            <div class="content-block">
-                <div class="content-text">
-                    <h2>Our Mission</h2>
-                    <p>The International Turon Federation (ITF) serves as the global governing body for traditional
-                        Turon sports, dedicated to preserving these ancient athletic traditions while promoting their
-                        growth and development worldwide.</p>
-                    <p>We believe that traditional sports are not just competitions, but cultural bridges that connect
-                        nations, preserve heritage, and inspire future generations to embrace their roots while reaching
-                        for excellence.</p>
-                </div>
-                <div class="content-image">
-                    <img src="images/about/mission.jpg" alt="ITF Mission" class="feature-image">
-                </div>
-            </div>
-
-            <!-- Vision Section -->
-            <div class="content-block reverse">
-                <div class="content-image">
-                    <img src="images/about/vision.jpg" alt="ITF Vision" class="feature-image">
-                </div>
-                <div class="content-text">
-                    <h2>Our Vision</h2>
-                    <p>To establish Turon sports as recognized and celebrated disciplines on the global stage, fostering
-                        international cooperation and cultural exchange through athletic excellence.</p>
-                    <p>We envision a world where traditional sports thrive alongside modern athletics, creating
-                        opportunities for athletes from all backgrounds to compete, learn, and grow together.</p>
-                </div>
-            </div>
-
-            <!-- Values Section -->
-            <div class="content-block">
-                <div class="content-text">
-                    <h2>Our Values</h2>
-                    <ul class="values-list">
-                        <li><strong>Heritage Preservation:</strong> Maintaining the authenticity and cultural
-                            significance of traditional Turon sports</li>
-                        <li><strong>Global Unity:</strong> Bringing together nations through shared sporting experiences
-                        </li>
-                        <li><strong>Excellence:</strong> Promoting the highest standards in competition and
-                            sportsmanship</li>
-                        <li><strong>Innovation:</strong> Adapting traditional practices for modern global participation
-                        </li>
-                        <li><strong>Inclusivity:</strong> Ensuring equal opportunities for all athletes regardless of
-                            background</li>
-                    </ul>
-                </div>
-                <div class="content-image">
-                    <img src="images/about/values.jpg" alt="ITF Values" class="feature-image">
-                </div>
-            </div>
-
-            <!-- Leadership Section -->
-            <div class="leadership-section">
-                <h2 class="section-title">Our Leadership</h2>
-                <div class="leadership-grid">
-                    <div class="leader-card">
-                        <img src="images/leadership/president.jpg" alt="President" class="leader-photo">
-                        <div class="leader-info">
-                            <h3>Dr. Akmal Saidov</h3>
-                            <p class="leader-title">President</p>
-                            <p class="leader-bio">Leading the federation with over 20 years of experience in traditional
-                                sports development and international relations.</p>
-                        </div>
-                    </div>
-
-                    <div class="leader-card">
-                        <img src="images/leadership/vice-president.jpg" alt="Vice President" class="leader-photo">
-                        <div class="leader-info">
-                            <h3>Prof. Elena Kozlova</h3>
-                            <p class="leader-title">Vice President</p>
-                            <p class="leader-bio">Expert in sports science and traditional athletic methodologies,
-                                promoting research and development.</p>
-                        </div>
-                    </div>
-
-                    <div class="leader-card">
-                        <img src="images/leadership/secretary.jpg" alt="Secretary General" class="leader-photo">
-                        <div class="leader-info">
-                            <h3>Mr. Jamshid Karimov</h3>
-                            <p class="leader-title">Secretary General</p>
-                            <p class="leader-bio">Coordinating international activities and member relations across all
-                                participating nations.</p>
-                        </div>
+                    <div class="about-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Turon sport musobaqasi">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <img src="images/turon-logo.png" alt="ITF Logo" class="footer-logo">
-                        <h3>International Turon Federation</h3>
+        <section class="values-section">
+            <div class="container">
+                <h2>Bizning qadriyatlarimiz</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3>An'ana</h3>
+                        <p>Qadimiy sport an'analarini saqlash va keyingi avlodlarga o'tkazish</p>
                     </div>
-                    <p>Preserving and promoting traditional Turon sports worldwide through unity, competition, and
-                        cultural exchange.</p>
-                </div>
-    
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="members.html">Members</a></li>
-                        <li><a href="news.html">News</a></li>
-                    </ul>
-                </div>
-    
-                <div class="footer-section">
-                    <h4>Events</h4>
-                    <ul class="footer-links">
-                        <li><a href="events.html">Competitions</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-    
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <div class="contact-info">
-                        <p>📧 info@turon-federation.org</p>
-                        <p>📞 +998 71 123 45 67</p>
-                        <p>📍 Tashkent, Uzbekistan</p>
+                    <div class="value-card">
+                        <h3>Birlik</h3>
+                        <p>Turli xalqlarni sport orqali birlashtirish va do'stlik aloqalarini mustahkamlash</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Rivojlanish</h3>
+                        <p>Zamonaviy texnologiyalar yordamida an'anaviy sportni rivojlantirish</p>
                     </div>
                 </div>
             </div>
-    
-            <div class="footer-bottom">
-                <p>&copy; 2024 International Turon Federation. All rights reserved.</p>
-            </div>
-        </div>
-        <div class="national-pattern"></div>
-    </footer>
+        </section>
+    </main>
 
+    <div id="footer-container"></div>
 
-
-    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
