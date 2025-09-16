@@ -379,19 +379,19 @@
         gap: 1.5rem;
     }
 
-    .hero-pattern{
+    .hero-pattern {
         img {
-            width: 100px;
+            width: 80px;
             height: 100vh;
         }
     }
 
-        .heroo-pattern {
-            img {
-                width: 100px;
-                height: 100vh;
-            }
+    .heroo-pattern {
+        img {
+            width: 80px;
+            height: 100vh;
         }
+    }
 
     .hero-content {
         padding: 1rem 0;
