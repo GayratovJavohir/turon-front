@@ -27,10 +27,21 @@ function initTheme() {
     }
 }
 
-// Language management
 function toggleLanguage() {
     const dropdown = document.getElementById("language-dropdown")
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block"
+    const languageBtn = document.querySelector(".language-btn")
+
+    if (dropdown) {
+        const isVisible = dropdown.classList.contains("show")
+
+        if (isVisible) {
+            dropdown.classList.remove("show")
+            languageBtn.setAttribute("aria-expanded", "false")
+        } else {
+            dropdown.classList.add("show")
+            languageBtn.setAttribute("aria-expanded", "true")
+        }
+    }
 }
 
 function setLanguage(lang) {
@@ -43,12 +54,12 @@ function setLanguage(lang) {
 
     localStorage.setItem("language", lang)
 
-    // Hide dropdown
     const dropdown = document.getElementById("language-dropdown")
-    if (dropdown) dropdown.style.display = "none"
-
-    // Here you would typically reload content in the selected language
-    // For now, we'll just store the preference
+    const languageBtn = document.querySelector(".language-btn")
+    if (dropdown) {
+        dropdown.classList.remove("show")
+        if (languageBtn) languageBtn.setAttribute("aria-expanded", "false")
+    }
 }
 
 // Mobile menu
@@ -106,6 +117,14 @@ function attachNavbarEvents() {
         languageBtn.onclick = toggleLanguage
     }
 
+    const languageButtons = document.querySelectorAll("#language-dropdown button")
+    languageButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            const lang = e.target.getAttribute("onclick").match(/'(\w+)'/)[1]
+            setLanguage(lang)
+        })
+    })
+
     // Close mobile menu when clicking outside
     document.addEventListener("click", (event) => {
         const mobileMenu = document.getElementById("mobile-menu")
@@ -145,13 +164,18 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => setLanguage(savedLang), 100)
     }
 
-    // Close dropdowns when clicking outside
     document.addEventListener("click", (event) => {
         const languageDropdown = document.getElementById("language-dropdown")
         const languageBtn = document.querySelector(".language-btn")
 
-        if (languageDropdown && !languageBtn?.contains(event.target)) {
-            languageDropdown.style.display = "none"
+        if (
+            languageDropdown &&
+            languageDropdown.classList.contains("show") &&
+            !languageBtn?.contains(event.target) &&
+            !languageDropdown.contains(event.target)
+        ) {
+            languageDropdown.classList.remove("show")
+            if (languageBtn) languageBtn.setAttribute("aria-expanded", "false")
         }
     })
 })

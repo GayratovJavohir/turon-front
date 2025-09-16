@@ -4,168 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turon Federation - Home</title>
+    <title>Turon Federation - Language Selection</title>
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .entering-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--background-color);
+            /* Added padding for mobile */
+            padding: 1rem;
+        }
+
+        .entering-container {
+            text-align: center;
+            /* Responsive padding */
+            padding: 2rem 1rem;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .logo-container {
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            /* Responsive logo size */
+            width: clamp(80px, 15vw, 120px);
+            height: clamp(80px, 15vw, 120px);
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .language-title {
+            /* Responsive font size */
+            font-size: clamp(1.25rem, 4vw, 1.5rem);
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+        }
+
+        .language-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* Better mobile spacing */
+            margin: 0 -0.5rem;
+        }
+
+        .language-button {
+            /* Better responsive button sizing */
+            padding: clamp(0.75rem, 3vw, 1rem) clamp(1.5rem, 5vw, 2rem);
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            min-width: clamp(80px, 20vw, 100px);
+            font-size: clamp(0.875rem, 3vw, 1rem);
+            margin: 0.5rem;
+        }
+
+        .language-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Added mobile-specific styles */
+        @media (max-width: 480px) {
+            .language-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .language-button {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div id="navbar-container"></div>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    🏆 World Championship 2024
-                </div>
-                <h1 class="hero-title">Xalqaro Turon federatsiyasiga xush kelibsiz</h1>
-                <p class="hero-subtitle">Turon an’anaviy sport turlarini butun dunyoda saqlash va targ‘ib qilish</p>
-
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <span class="hero-stat-number">15+</span>
-                        <span class="hero-stat-label">A'zo davlatlar</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-number">500+</span>
-                        <span class="hero-stat-label">Sportchilar</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-number">25+</span>
-                        <span class="hero-stat-label">Yillik tadbirlar</span>
-                    </div>
-                </div>
-
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">Batafsil ma'lumot oling</a>
-                    <a href="events.html" class="btn btn-secondary">Tadbirlarni ko'rish</a>
-                </div>
+    <div class="entering-page">
+        <div class="entering-container">
+            <div class="logo-container">
+                <img src="/placeholder.svg?height=120&width=120" alt="Turon Federation" class="logo">
             </div>
-        </section>
-
-        <!-- Welcome Section -->
-        <section class="welcome-section">
-            <div class="container">
-                <h2 class="welcome-title">Turon Federatsiya saytiga hush kelibsiz!</h2>
+            <h1 class="language-title">Tilni tanlang</h1>
+            <div class="language-buttons">
+                <a href="home.html?lang=uz" class="language-button">UZ</a>
+                <a href="home.html?lang=ru" class="language-button">RU</a>
+                <a href="home.html?lang=en" class="language-button">ENG</a>
             </div>
-        </section>
-
-        <!-- Latest News -->
-        <section class="news-section">
-            <div class="container">
-                <h2 class="section-title">Songi yangiliklar</h2>
-                <div class="news-grid">
-                    <article class="news-card">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Championship">
-                        <div class="news-card-content">
-                            <h3 class="news-card-title">World Championship Results</h3>
-                            <p class="news-card-excerpt">Outstanding performances from athletes across all member
-                                countries...</p>
-                            <span class="news-card-date">December 15, 2024</span>
-                        </div>
-                    </article>
-
-                    <article class="news-card">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Training">
-                        <div class="news-card-content">
-                            <h3 class="news-card-title">New Training Programs</h3>
-                            <p class="news-card-excerpt">Innovative training methods for traditional Turon sports...</p>
-                            <span class="news-card-date">December 10, 2024</span>
-                        </div>
-                    </article>
-
-                    <article class="news-card">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Cultural Event">
-                        <div class="news-card-content">
-                            <h3 class="news-card-title">Cultural Sports Festival</h3>
-                            <p class="news-card-excerpt">Celebrating the rich heritage of Central Asian sports...</p>
-                            <span class="news-card-date">December 5, 2024</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Preview -->
-        <section class="about-preview">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Biz haqimizda</h2>
-                        <p>The International Turon Federation is dedicated to preserving and promoting traditional
-                            Central Asian sports. Our mission is to maintain the cultural heritage while adapting to
-                            modern sporting standards.</p>
-                        <a href="about.html" class="btn btn-primary">Ko'proq</a>
-                    </div>
-                    <div class="about-image">
-                        <img src="/placeholder.svg?height=400&width=500" alt="About Us">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Preview -->
-        <section class="gallery-preview">
-            <div class="container">
-                <h2 class="section-title">Gallery</h2>
-                <div class="gallery-tabs">
-                    <a href="gallery.html?type=photos" class="gallery-tab active">Photos</a>
-                    <a href="gallery.html?type=videos" class="gallery-tab">Videos</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Partners -->
-        <section class="partners-section">
-            <div class="container">
-                <h2 class="section-title">Partners</h2>
-                <div class="partners-slider">
-                    <div class="partners-track">
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Uzbekistan">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Kazakhstan">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Kyrgyzstan">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Tajikistan">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Turkmenistan">
-                        </div>
-                        <!-- Duplicate for seamless loop -->
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Uzbekistan">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Kazakhstan">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Kyrgyzstan">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Tajikistan">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=60&width=80" alt="Turkmenistan">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <div id="footer-container"></div>
-
-    <script src="js/common.js"></script>
-    <script src="js/home.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>

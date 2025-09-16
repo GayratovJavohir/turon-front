@@ -7,11 +7,11 @@
 
     <ul class="navbar-menu">
       <li class="navbar-item">
-        <a href="index.html" class="navbar-link">Home</a>
+        <a href="home.html" class="navbar-link">Home</a>
       </li>
-      <li class="navbar-item dropdown">
+      <li class="navbar-item dropdown-a">
         <a href="about.html" class="navbar-link">About</a>
-        <div class="dropdown-content">
+        <div class="dropdown-about">
           <a href="history.html">History</a>
           <a href="members.html">Members</a>
         </div>
@@ -31,14 +31,15 @@
     </ul>
 
     <div class="navbar-controls">
-      <div class="language-selector">
-        <button class="language-btn" onclick="toggleLanguage()">
-          <span id="current-lang">EN</span> ▼
+      <div class="dropdown language-selector">
+        <button class="language-btn" onclick="toggleLanguage()" aria-expanded="false" aria-controls="language-dropdown">
+          <span id="current-lang">EN</span>
+          <span class="dropdown-icon">▼</span>
         </button>
         <div class="dropdown-content" id="language-dropdown">
-          <a href="#" onclick="setLanguage('uz')">UZ</a>
-          <a href="#" onclick="setLanguage('ru')">RU</a>
-          <a href="#" onclick="setLanguage('en')">EN</a>
+          <button onclick="setLanguage('uz')">UZ</button>
+          <button onclick="setLanguage('ru')">RU</button>
+          <button onclick="setLanguage('en')">EN</button>
         </div>
       </div>
       <button class="theme-toggle" onclick="toggleTheme()">
@@ -50,7 +51,7 @@
 
   <div class="mobile-menu" id="mobile-menu">
     <ul class="navbar-menu">
-      <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+      <li class="navbar-item"><a href="home.html" class="navbar-link">Home</a></li>
       <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
       <li class="navbar-item"><a href="history.html" class="navbar-link">History</a></li>
       <li class="navbar-item"><a href="members.html" class="navbar-link">Members</a></li>
