@@ -34,15 +34,16 @@
             width: clamp(80px, 15vw, 120px);
             height: clamp(80px, 15vw, 120px);
             animation: rotate 3s linear infinite;
+            transform-style: preserve-3d;
         }
 
         @keyframes rotate {
             from {
-                transform: rotate(0deg);
+                transform: rotateY(0deg);
             }
 
             to {
-                transform: rotate(360deg);
+                transform: rotateY(360deg);
             }
         }
 
