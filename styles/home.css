@@ -20,6 +20,7 @@
     img {
         width: 150px;
         height: 100vh;
+        display: block;
     }
 }
 
@@ -33,6 +34,7 @@
     img {
         width: 150px;
         height: 100vh;
+        display: block;
     }
 }
 
@@ -379,17 +381,19 @@
         gap: 1.5rem;
     }
 
+    .hero-title {
+        margin: 20px 0 0 0;
+    }
+
     .hero-pattern {
         img {
-            width: 80px;
-            height: 100vh;
+            display: none;
         }
     }
 
     .heroo-pattern {
         img {
-            width: 80px;
-            height: 100vh;
+            display: none;
         }
     }
 
